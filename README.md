@@ -1,96 +1,154 @@
-# 📊 Analyse des profils Data Science – Kaggle 2020
+📊 Analyse des profils techniques – Kaggle Survey 2020
+🚀 Application en ligne
 
-## 📌 Description du projet
+👉 Lien Streamlit :
+🔗 https://kaggle-profiles-app.streamlit.app/
 
-Ce projet analyse les profils des participants de l’enquête **Kaggle Machine Learning & Data Science Survey 2020**.
+👉 Code source GitHub :
+https://github.com/cliford-cupidon/kaggle-profiles-clustering
 
-L’objectif est de comprendre les différents profils techniques grâce à :
+🧠 Description du projet
 
-* 📈 Data Visualisation
-* 🤖 Clustering des profils
-* 🌐 Application interactive Streamlit
+Ce projet analyse les profils techniques issus du Kaggle Machine Learning & Data Science Survey 2020.
 
-L’application permet d’explorer les résultats facilement.
+L’objectif est de :
 
----
+Comprendre les différents profils Data
 
-## 🎯 Objectifs
+Identifier des groupes similaires grâce au Machine Learning
 
-* Explorer les profils Data Science
-* Identifier des groupes similaires avec du clustering
-* Visualiser les outils, langages et expériences
-* Comprendre les différences entre profils
+Visualiser les tendances du marché Data Science
 
----
+Proposer une application interactive pour explorer les résultats
 
-## 📂 Structure du projet
+Une application Streamlit permet d’explorer dynamiquement les analyses.
 
-```
-data-profiles-kaggle2020/
-│
-├── app.py                     # Application Streamlit
-├── clustered_profiles.csv     # Données après clustering
-├── clustering_analysis.ipynb  # Notebook analyse + clustering
-├── README.md
-├── requirements.txt
-```
+📂 Dataset
 
----
+Source : Kaggle Survey 2020
 
-## ⚙️ Technologies utilisées
+Le dataset contient des informations sur :
 
-* Python
-* Pandas
-* Scikit-learn
-* Plotly
-* Streamlit
-* VS Code
+Les langages utilisés (Python, R, SQL…)
 
----
+Les outils Data & ML
 
-## ▶️ Lancer l’application Streamlit
+L’expérience en Data Science
 
-### 1️⃣ Ouvrir le dossier du projet dans le terminal
+Les rôles professionnels
 
-Exemple :
+Les salaires
 
-```
-cd Desktop/data-profiles-kaggle2020
-```
+Les pays
 
-### 2️⃣ Installer les dépendances
+🔎 Méthodologie
+1️⃣ Préparation des données
 
-```
+Nettoyage des données
+
+Sélection des variables pertinentes
+
+Encodage des variables catégorielles
+
+Standardisation des données
+
+2️⃣ Clustering
+
+Algorithme utilisé : K-Means
+
+Objectifs :
+
+Regrouper les profils similaires
+
+Identifier différents types de profils techniques
+
+Analyser les caractéristiques de chaque cluster
+
+Le modèle a été exécuté dans un notebook afin :
+
+d’éviter un recalcul à chaque refresh Streamlit
+
+d’améliorer la performance de l’application
+
+d’assurer la reproductibilité des résultats
+
+3️⃣ Visualisations
+
+Bibliothèques utilisées :
+
+Plotly (graphiques interactifs)
+
+Matplotlib
+
+Seaborn
+
+Altair
+
+🖥️ Application Streamlit
+
+L’application permet :
+
+Navigation par sections
+
+Présentation du dataset
+
+Visualisations interactives
+
+Analyse des profils techniques
+
+Résultats du clustering
+
+Conclusion et interprétation
+
+Elle charge directement le fichier clustered_profiles.csv généré par le notebook.
+
+🛠️ Technologies utilisées
+
+Python
+
+Streamlit
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Plotly
+
+Matplotlib
+
+Seaborn
+
+Altair
+
+⚙️ Installation en local
+git clone https://github.com/cliford-cupidon/kaggle-profiles-clustering.git
+cd kaggle-profiles-clustering
 pip install -r requirements.txt
-```
-
-### 3️⃣ Lancer l’application
-
-```
 streamlit run app.py
-```
+📁 Structure du projet
+data/
+ └── clustered_profiles.csv
+app.py
+requirements.txt
+clustering_analysis.ipynb
+README.md
+📈 Résultats
 
-Puis ouvrir le lien affiché dans le navigateur.
+Le clustering met en évidence plusieurs profils types :
 
----
+Profils débutants en Data Science
 
-## 📊 Résultats principaux
+Data Analysts expérimentés
 
-* Identification de plusieurs profils Data Science
-* Différences dans les langages utilisés
-* Différences dans les outils et plateformes
-* Différences dans l’expérience en programmation
+Machine Learning Engineers
 
-Chaque cluster représente un profil spécifique.
+Profils hybrides polyvalents
 
----
+Chaque cluster est analysé et interprété dans l’application.
 
-## 👤 Auteur
+👨‍💻 Auteur
 
-Cliford CUPIDON – Projet Data Science 2026
-
----
-
-## 🙏 Remerciements
-
-Merci à Kaggle pour le dataset et à la communauté Data Science.
+Cliford Cupidon
+Projet Data Science – Portfolio
